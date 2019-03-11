@@ -249,10 +249,9 @@ h1 {
   font-size: 50px;
   color: #FF8B7B;
   margin-bottom: 10px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 h2 {
-  margin-top: 50px;
   text-align: center;
   font-size: 100px;
 }
@@ -266,13 +265,13 @@ p {
   padding: 50px;
 }
 footer {
-  padding-top: 200px;
+  padding-top: 320px;
 }
 button {
   display: none;
 }
 nav {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 nav a {
@@ -292,5 +291,4 @@ a:hover {
 }
 .copyright {
   border: none;
-  margin-bottom: 5px;
 }
