@@ -220,13 +220,12 @@ body {
     display: none;
   }
 }
-@media (min-width: 800px) {
-  .navigation {
-    display: block;
-  }
-}
 @media (min-width: 1000px) {
   .navigation {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .dropdown {
+    display: none;
   }
 }

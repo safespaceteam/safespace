@@ -104,6 +104,7 @@ img.happy {
 
 .navigation {
     display: none;
+    
     }
 
 button {
@@ -168,16 +169,21 @@ button {
   
 }
 
-
-//tablet
-@media (min-width: 800px) {
-    .navigation {
-        display: block;
-    }
-}
 //desktop
 @media (min-width: 1000px) {
     .navigation {
-        display: block;
+        display: flex;
+    justify-content: flex-end;
     }
+    .dropdown {
+        display: none;
+    }
+
+    
+
+    
+
+
+
+
 }
