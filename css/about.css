@@ -179,7 +179,7 @@ body {
     font-weight: bold;
   }
   .dropdown .dropdown-content {
-    width: 18%;
+    width: 14%;
     position: absolute;
     background-color: #fef7ed;
     display: flex;
@@ -232,10 +232,10 @@ body {
     justify-content: center;
   }
   .tabs {
-    margin-left: 10rem;
     margin-top: 100px;
     width: 300px;
     text-align: center;
+    width: 100%;
   }
   .tabs .tabs-items {
     margin: 1rem;
@@ -330,7 +330,7 @@ body {
     color: #FF8B7B;
   }
   .tabs {
-    width: 80%;
+    width: 90%;
   }
   .tabs .tabs-items {
     width: 100%;
