@@ -290,6 +290,9 @@ body {
   .tabs .tabs-link-selected:hover {
     background-color: #fef7ed;
   }
+  a {
+    text-decoration: none;
+  }
 }
 @media (min-width: 1000px) {
   * {
