@@ -170,12 +170,12 @@ body {
   .dropdown .dropdown-button {
     width: 50px;
     height: 50px;
-    padding: 20px;
     border: 3px solid #fef7ed;
     background-color: #FED955;
     color: #fef7ed;
-    font-size: 1rem;
+    font-size: 5rem;
     font-weight: bold;
+    text-align: center;
   }
   .dropdown .dropdown-content {
     width: 15%;
@@ -221,7 +221,6 @@ body {
   }
   .tabs {
     margin-top: 60px;
-    width: 300px;
     text-align: center;
     width: 100%;
   }
@@ -258,12 +257,13 @@ body {
     justify-content: center;
   }
   .tabs .tabs-link {
-    padding: 20px 10px;
+    padding: 10px 10px;
     font-size: 2.4rem;
     background-color: #3A54B4;
     border-right: 1px solid white;
     color: #fef7ed;
     border-radius: 5px;
+    margin: 15px;
     cursor: pointer;
   }
   .tabs .tabs-link:hover {
