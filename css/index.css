@@ -166,6 +166,10 @@ body {
     border-radius: 60%;
     padding: 10px;
     width: 400px;
+    -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    margin: 20px;
   }
   .navigation {
     display: none;
@@ -225,6 +229,9 @@ body {
   .dropdown .dropdown-hidden {
     display: none;
   }
+  .moveButton {
+    display: none;
+  }
 }
 @media (min-width: 1000px) {
   * {
@@ -232,7 +239,14 @@ body {
   }
   .navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-left: 250px;
+    font-size: 5px;
+  }
+  .navigation .yes {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
   .dropdown {
     display: none;
@@ -264,6 +278,9 @@ body {
     width: 500px;
     margin-right: 250px;
     margin-top: 30px;
+    -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
   }
   footer {
     padding-top: 320px;
