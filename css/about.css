@@ -134,11 +134,17 @@ body {
   text-align: center;
 }
 @media (min-width: 500px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-right: 20px;
+  }
   h1 {
     text-align: left;
     color: #FFB5AB;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 900;
   }
   h2 {
@@ -159,7 +165,6 @@ body {
     text-align: center;
   }
   .dropdown {
-    margin: 5px;
     cursor: pointer;
   }
   .dropdown .dropdown-button {
@@ -173,7 +178,7 @@ body {
     font-weight: bold;
   }
   .dropdown .dropdown-content {
-    width: 20%;
+    width: 15%;
     position: absolute;
     background-color: #fef7ed;
     display: flex;
