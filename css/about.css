@@ -229,7 +229,7 @@ body {
     height: 200px;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200px;
     font-size: 1.8rem;
@@ -241,6 +241,7 @@ body {
     display: none;
     width: auto;
     text-align: center;
+    line-height: 20px;
   }
   .tabs .tabs-item .tabs-item-title {
     font-family: 'Open Sans', sans-serif;
@@ -280,6 +281,13 @@ body {
   }
   a {
     text-decoration: none;
+  }
+  a:link,
+  a:visited {
+    color: #66605e;
+  }
+  a:hover {
+    color: #FF8B7B;
   }
 }
 @media (min-width: 1000px) {
@@ -330,7 +338,7 @@ body {
   h2 {
     padding-top: 3rem;
     text-align: center;
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .teamSection {
     border-radius: 10px;
@@ -354,9 +362,10 @@ body {
     height: 300px;
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 30px;
     margin: 10px;
     margin-bottom: -100px;
+    line-height: 25px;
   }
   .tabs .tabs-item {
     display: none;
@@ -391,5 +400,16 @@ body {
   }
   .tabs .tabs-link-selected:hover {
     background-color: #FED955;
+  }
+  h2 {
+    animation: nudge 5s linear infinite alternate;
+  }
+  @keyframes nudge {
+    0% {
+      transform: translate(200px, 0);
+    }
+    100% {
+      transform: translate(-200px, 0);
+    }
   }
 }

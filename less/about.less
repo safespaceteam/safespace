@@ -187,7 +187,7 @@ img {
       height: 200px;
       display: flex;
       justify-content: center;
-      padding-top: 60px;
+      padding-top: 20px;
       font-family: 'Open Sans',sans-serif;
       font-weight: 200px;
       font-size: 1.8rem;
@@ -200,6 +200,7 @@ img {
       display: none; 
       width: auto;
       text-align: center;
+      line-height: 20px;
       
       .tabs-item-title {
         font-family: 'Open Sans',sans-serif;
@@ -245,6 +246,13 @@ img {
     a{
       text-decoration: none;
     }
+    a:link, a:visited {
+      color: #66605e;
+    }
+    a:hover {
+      color: #FF8B7B;
+    }
+    
 ////TABS END 
  }
 
@@ -308,7 +316,7 @@ h1{
 h2 {
 padding-top: 3rem;
 text-align: center;
-font-size: 8rem;
+font-size: 7rem;
 
 }
 
@@ -338,14 +346,15 @@ font-size: 8rem;
     height: 300px;
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 30px;
     margin: 10px;
     margin-bottom: -100px;
+    line-height: 25px;
     
   }
   .tabs-item {
     display: none; 
-    width: 50%;
+  width: 50%;
     .tabs-item-title {
       font-size: 2.4rem;
       font-weight: bold;
@@ -381,5 +390,25 @@ font-size: 8rem;
     }
   }
 }
+
+//OUR TEAM ANIMATION
+h2 {
+
+  animation: 
+    nudge 5s linear infinite alternate;
+  
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(200px, 0);
+  }
+  
+  100% {
+    transform: translate(-200px, 0);
+  }
+}
+
+
 
 }
