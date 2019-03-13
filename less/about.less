@@ -43,10 +43,7 @@ table {
 }
 
 * {
-  font-family: 'Open Sans',sans-serif;
-      font-weight: 200px;
-      font-size: 1.8rem;
-      color: #403f3d;
+ 
     box-sizing: border-box;
 }
 
@@ -62,17 +59,14 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     text-align: center;
  }
 
  @media (min-width: 500px) {
 
 ///header, fonts, buttons, hiding
-    section {
-        display: flex;
-        justify-content: space-between;
-    }
+    
 
     h1 {
         text-align: left;
@@ -101,10 +95,9 @@ body {
           padding-top: 160px;
           text-align: center;
       }
-
 ///DROPDOWN 
 .dropdown {
-    margin: 5px;
+  margin: 5px;
   cursor: pointer;
   .dropdown-button {
   width: 50px;
@@ -154,11 +147,16 @@ img {
 
 ///TEAM IMAGES
 .team {
-  margin: 20px;
+  
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+   font-family: 'Open Sans',sans-serif;
+      font-weight: 200px;
+      font-size: 1.8rem;
+      color: #403f3d;
+      text-align: center;
 }
 
 
@@ -166,14 +164,14 @@ img {
 
 .tabs {
     
-    margin-top: 100px;
+    margin-top: 60px;
     width: 300px;
     text-align: center;
     width: 100%;
     
     .tabs-items {
     margin: 1rem;
-      height: 300px;
+      height: 200px;
       display: flex;
       justify-content: center;
       padding-top: 60px;
@@ -202,14 +200,15 @@ img {
     .tabs-links {
       display: flex;
       background-color:  #fef7ed;
+      justify-content: center;
     }
   
     .tabs-link {
-      padding: 20px 25px;
+      padding: 20px 10px;
       font-size: 24px;
       background-color: #3A54B4;
       border-right: 1px solid white;
-      color: black;
+      color: #fef7ed;
       border-radius: 5px;
       cursor: pointer;
       &:hover {
@@ -234,25 +233,25 @@ img {
 
 ///DESKTOP
 @media (min-width: 1000px) {
-  *{
-    margin: 10px;
-}
+
 
 button{
-  display: block;
+  display: none;
+  
 }
   
 .navigation {
 display: flex;
-justify-content: space-between;
-margin-left: 250px;
-font-size: 2rem;
+justify-content: flex-end;
+padding-bottom: 20px;
+font-size: 1.8rem;
     
 .yes {
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
 button {
   width: 380px;
   color: white;
@@ -275,19 +274,30 @@ button {
 h1 {
 font-size: 4rem;
 color: #FF8B7B;
-margin-bottom: 1rem;
+width: 50%;
 
 }
 h2 {
 padding-top: 3rem;
-text-align: left;
-margin-left: 20rem;
-font-size: 12rem;
+text-align: center;
+font-size: 8rem;
+
 }
 
+.teamSection {
+  border-radius: 10px;
+  margin: 0 500px 500px 500px;
+  border: 5px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  
+}
   
 a {
   text-decoration: none;
+  padding: 30px;
 }
 a:link, a:visited {
   color: #66605e;
@@ -297,18 +307,25 @@ a:hover {
 }
 
 /////TABS
+.section {
+  display: flex;
+  justify-content: center;
+}
+
 .tabs {
+  margin-top: 40px;
   width: 90%;
   .tabs-items {
     width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 80px;
+    margin: 10px;
+    
   }
   .tabs-item {
     display: none; 
-      margin-left: 8rem;
     width: 75%;
     .tabs-item-title {
       font-size: 24px;
@@ -321,9 +338,6 @@ a:hover {
   }
 
   .tabs-links {
-  margin-left: 10rem;
-    display: flex;
-    justify-content: center;
     background-color: #fef7ed;
   }
 

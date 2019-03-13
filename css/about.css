@@ -116,10 +116,6 @@ table {
   border-spacing: 0;
 }
 * {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200px;
-  font-size: 1.8rem;
-  color: #403f3d;
   box-sizing: border-box;
 }
 html,
@@ -134,14 +130,10 @@ body {
   background: #fef7ed;
 }
 .container {
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 @media (min-width: 500px) {
-  section {
-    display: flex;
-    justify-content: space-between;
-  }
   h1 {
     text-align: left;
     color: #FFB5AB;
@@ -212,21 +204,25 @@ body {
     margin: 15px;
   }
   .team {
-    margin: 20px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200px;
+    font-size: 1.8rem;
+    color: #403f3d;
+    text-align: center;
   }
   .tabs {
-    margin-top: 100px;
+    margin-top: 60px;
     width: 300px;
     text-align: center;
     width: 100%;
   }
   .tabs .tabs-items {
     margin: 1rem;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     padding-top: 60px;
@@ -254,13 +250,14 @@ body {
   .tabs .tabs-links {
     display: flex;
     background-color: #fef7ed;
+    justify-content: center;
   }
   .tabs .tabs-link {
-    padding: 20px 25px;
+    padding: 20px 10px;
     font-size: 24px;
     background-color: #3A54B4;
     border-right: 1px solid white;
-    color: black;
+    color: #fef7ed;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -281,17 +278,14 @@ body {
   }
 }
 @media (min-width: 1000px) {
-  * {
-    margin: 10px;
-  }
   button {
-    display: block;
+    display: none;
   }
   .navigation {
     display: flex;
-    justify-content: space-between;
-    margin-left: 250px;
-    font-size: 2rem;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
   }
   .navigation .yes {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -317,16 +311,25 @@ body {
   h1 {
     font-size: 4rem;
     color: #FF8B7B;
-    margin-bottom: 1rem;
+    width: 50%;
   }
   h2 {
     padding-top: 3rem;
-    text-align: left;
-    margin-left: 20rem;
-    font-size: 12rem;
+    text-align: center;
+    font-size: 8rem;
+  }
+  .teamSection {
+    border-radius: 10px;
+    margin: 0 500px 500px 500px;
+    border: 5px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
   }
   a {
     text-decoration: none;
+    padding: 30px;
   }
   a:link,
   a:visited {
@@ -335,7 +338,12 @@ body {
   a:hover {
     color: #FF8B7B;
   }
+  .section {
+    display: flex;
+    justify-content: center;
+  }
   .tabs {
+    margin-top: 40px;
     width: 90%;
   }
   .tabs .tabs-items {
@@ -343,11 +351,11 @@ body {
     height: 300px;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 80px;
+    margin: 10px;
   }
   .tabs .tabs-item {
     display: none;
-    margin-left: 8rem;
     width: 75%;
   }
   .tabs .tabs-item .tabs-item-title {
@@ -359,9 +367,6 @@ body {
     display: block;
   }
   .tabs .tabs-links {
-    margin-left: 10rem;
-    display: flex;
-    justify-content: center;
     background-color: #fef7ed;
   }
   .tabs .tabs-link {
