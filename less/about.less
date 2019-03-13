@@ -43,6 +43,7 @@ table {
 }
 
 * {
+ 
     box-sizing: border-box;
 }
 
@@ -58,32 +59,34 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     text-align: center;
  }
 
  @media (min-width: 500px) {
 
 ///header, fonts, buttons, hiding
-    section {
-        display: flex;
-        justify-content: space-between;
-    }
+    
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-right: 20px;
+}
 
     h1 {
         text-align: left;
         color: #FFB5AB;
         font-family: 'Open Sans',sans-serif;
-        font-size: 30px;
+        font-size: 3rem;
         font-weight: 900;
         }
 
     h2 {
-        margin-top: 100px;
         text-align: center;
         color: #FF8B7B;
         font-family: 'Open Sans',sans-serif;
-        font-size: 55px;
+        font-size: 5rem;
         font-weight: 900;
     }
 
@@ -98,24 +101,24 @@ body {
           padding-top: 160px;
           text-align: center;
       }
-
 ///DROPDOWN 
 .dropdown {
-    margin: 5px;
+  
+
   cursor: pointer;
   .dropdown-button {
-  margin-right: 10px;
   width: 50px;
   height: 50px;
     padding: 20px;
     border: 3px solid#fef7ed;
     background-color: #FED955;
     color: #fef7ed;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
+   
   }
   .dropdown-content {
-    width: 14%;
+    width: 15%;
     position: absolute;
     background-color: #fef7ed;
     display: flex;
@@ -128,7 +131,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #3A54B4;
     &:hover {
@@ -150,45 +153,33 @@ img {
     margin: 15px
 }
 
-.team{
-    color: #403f3d;
-        font-family: 'Open Sans',sans-serif;
-        font-size: 18px;
-        font-weight: 200;
+///TEAM IMAGES
+.team {
+  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   font-family: 'Open Sans',sans-serif;
+      font-weight: 200px;
+      font-size: 1.8rem;
+      color: #403f3d;
+      text-align: center;
 }
 
-      .one {
-          margin-top: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-      
-      .two {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-    
-      .three {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-///TEAM IMAGES
 
 ////TABS
 
 .tabs {
     
-    margin-top: 100px;
+    margin-top: 60px;
     width: 300px;
     text-align: center;
     width: 100%;
     
     .tabs-items {
     margin: 1rem;
-      height: 300px;
+      height: 200px;
       display: flex;
       justify-content: center;
       padding-top: 60px;
@@ -205,9 +196,8 @@ img {
       text-align: center;
       .tabs-item-title {
         font-family: 'Open Sans',sans-serif;
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 800px;
-        padding-bottom: 10px;
         text-align: center;
       }
     }
@@ -218,15 +208,16 @@ img {
     .tabs-links {
       display: flex;
       background-color:  #fef7ed;
+      justify-content: center;
     }
   
     .tabs-link {
-      padding: 20px 25px;
-      font-size: 24px;
+      padding: 20px 10px;
+      font-size: 2.4rem;
       background-color: #3A54B4;
       border-right: 1px solid white;
-      color: black;
-      border-radius: 20%;
+      color: #fef7ed;
+      border-radius: 5px;
       cursor: pointer;
       &:hover {
         background-color: #FED955;
@@ -251,105 +242,135 @@ img {
 ///DESKTOP
 @media (min-width: 1000px) {
 
-    *{
-        margin: 10px;
-    }
 
-    .navigation {
-        display: flex;
-        justify-content: flex-end;
-        }
+section{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
 
-    h1 {
-        margin-top: -45px;
-        font-size: 45px;
-    }
+.navigation {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
 
-    h2 {
-        font-size: 65px;
-        margin-right: 7rem;
-    }
+a {
+  text-decoration: none;
+  padding: 0 30px;
+}
+a:link, a:visited {
+  color: #66605e;
+}
+a:hover {
+  color: #FF8B7B;
+}
 
-    .dropdown {
-        display: none;
-    }
+button{
+  display: none;
+  
+}  
 
-    nav{
-        margin-top: 25px;
-        margin-right: 10px;
-    }
+button {
+  width: 380px;
+  color: white;
+  background-color: #3A54B4;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 2.0rem;
+  margin: 10px 4px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 200;
+  
+
+  cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2 {
+padding-top: 3rem;
+text-align: center;
+font-size: 8rem;
+
+}
+
+.teamSection {
+  border-radius: 10px;
+  margin: 0 500px 500px 500px;
+  border: 5px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  
+}
+  
+
+/////TABS
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  margin-top: 100px;
+  width: 90%;
+  .tabs-items {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    margin: 10px;
+    margin-bottom: -100px;
     
-    nav a{
-        padding: 20px;
-        font-size: 20px;
-        text-decoration: none;
-    
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    a:link, a:visited {
-        color: #66605e;
-    }
-    a:hover {
-        color: #FF8B7B;
-    }
-
-    /////TABS
-    .tabs {
-        width: 90%;
-        .tabs-items {
-          width: 100%;
-          height: 300px;
-          display: flex;
-          justify-content: center;
-          padding-top: 60px;
-        }
-        .tabs-item {
-          display: none; 
-            margin-left: 8rem;
-          width: 75%;
-          .tabs-item-title {
-            font-size: 24px;
-            font-weight: bold;
-            padding-bottom: 10px;
-          }
-        }
-        .tabs-item-selected {
-          display: block;
-        }
+  }
+  .tabs-item {
+    display: none; 
+    width: 50%;
+    .tabs-item-title {
+      font-size: 2.4rem;
+      font-weight: bold;
       
-        .tabs-links {
-        margin-left: 10rem;
-          display: flex;
-          justify-content: center;
-          background-color: #fef7ed;
-        }
-      
-        .tabs-link {
-          padding: 20px 25px;
-          font-size: 24px;
-          background-color: #3A54B4;
-          border-right: 1px solid white;
-          color: #fef7ed;
-          cursor: pointer;
-          &:hover {
-            background-color: #3A54B4;
-          }
-        }
-        .tabs-link-selected {
-          z-index: 2;
-          border-right: 1px solid #fef7ed;
-          background-color: #fef7ed;
-          color: black;
-          &:hover {
-            background-color: #FED955;
-          }
-        }
-      }
+    }
+  }
+  .tabs-item-selected {
+    display: block;
+  }
 
-      .team {
-          margin-right: 50px;
-      }
+  .tabs-links {
+    background-color: #fef7ed;
+  }
+
+  .tabs-link {
+    padding: 20px 25px;
+    font-size: 2.4rem;
+    background-color: #3A54B4;
+    border-right: 1px solid white;
+    color: #fef7ed;
+    cursor: pointer;
+    &:hover {
+      background-color: #3A54B4;
+    }
+  }
+  .tabs-link-selected {
+    z-index: 2;
+    border-right: 1px solid #fef7ed;
+    background-color: #fef7ed;
+    color: black;
+    &:hover {
+      background-color: #FED955;
+    }
+  }
+}
+
 }

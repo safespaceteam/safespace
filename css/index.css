@@ -145,7 +145,7 @@ body {
     text-align: left;
     color: #FFB5AB;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 900;
   }
   h2 {
@@ -159,13 +159,17 @@ body {
     margin-top: 20px;
     color: #3A54B4;
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 200;
   }
   img.happy {
     border-radius: 60%;
     padding: 10px;
     width: 400px;
+    -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    margin: 20px;
   }
   .navigation {
     display: none;
@@ -177,7 +181,7 @@ body {
     border: none;
     padding: 15px 32px;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     margin: 10px 4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
@@ -196,7 +200,7 @@ body {
     border: 3px solid #FED955;
     background-color: #FED955;
     color: #fef7ed;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     margin-right: -25px;
   }
@@ -214,7 +218,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #3A54B4;
   }
@@ -225,6 +229,9 @@ body {
   .dropdown .dropdown-hidden {
     display: none;
   }
+  .moveButton {
+    display: none;
+  }
 }
 @media (min-width: 1000px) {
   * {
@@ -232,7 +239,14 @@ body {
   }
   .navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-left: 250px;
+    font-size: 0.5rem;
+  }
+  .navigation .yes {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
   .dropdown {
     display: none;
@@ -250,7 +264,7 @@ body {
   }
   h3 {
     margin-left: 17rem;
-    font-size: 28px;
+    font-size: 2.8rem;
     margin-bottom: 20px;
     margin-top: 25px;
   }
@@ -264,6 +278,9 @@ body {
     width: 500px;
     margin-right: 250px;
     margin-top: 30px;
+    -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
   }
   footer {
     padding-top: 320px;
@@ -285,7 +302,7 @@ body {
   }
   nav a {
     padding: 20px;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
   }
   a {
