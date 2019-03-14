@@ -130,10 +130,13 @@ body {
   background: #fef7ed;
 }
 .container {
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 @media (min-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
   .signUp {
     display: none;
   }
@@ -233,13 +236,15 @@ body {
   }
 }
 @media (min-width: 1000px) {
+  .container {
+    max-width: 1200px;
+  }
   * {
     margin: 10px;
   }
   .navigation {
     display: flex;
-    justify-content: space-between;
-    margin-left: 250px;
+    justify-content: flex-end;
     font-size: 0.5rem;
   }
   .navigation .yes {
@@ -258,19 +263,22 @@ body {
   h2 {
     padding-top: 3rem;
     text-align: left;
-    margin-left: 20rem;
     font-size: 12rem;
   }
   h3 {
-    margin-left: 17rem;
     font-size: 2.8rem;
     margin-bottom: 20px;
     margin-top: 25px;
+  }
+  .mid {
+    display: flex;
+    flex-direction: column;
   }
   .midSec {
     display: flex;
     margin-top: 180px;
     margin-left: 250px;
+    justify-content: center;
     text-align: center;
   }
   img.happy {
@@ -290,7 +298,6 @@ body {
   }
   .navigation {
     margin-top: -60px;
-    margin-right: -100px;
   }
   .signUp2 {
     display: none;

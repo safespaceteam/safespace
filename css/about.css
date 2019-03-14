@@ -134,6 +134,9 @@ body {
   text-align: center;
 }
 @media (min-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
   section {
     display: flex;
     justify-content: space-between;
@@ -291,6 +294,9 @@ body {
   }
 }
 @media (min-width: 1000px) {
+  .container {
+    max-width: 1200px;
+  }
   section {
     display: flex;
     justify-content: space-around;
