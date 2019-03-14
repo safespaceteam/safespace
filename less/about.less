@@ -63,8 +63,10 @@ body {
     text-align: center;
  }
 
- @media (min-width: 500px) {
 
+  .container {
+    max-width: 500px;
+  }
 ///header, fonts, buttons, hiding
     
 section {
@@ -109,13 +111,13 @@ section {
   .dropdown-button {
   width: 50px;
   height: 50px;
-    padding: 20px;
+    
     border: 3px solid#fef7ed;
     background-color: #FED955;
     color: #fef7ed;
-    font-size: 1rem;
+    font-size: 5rem;
     font-weight: bold;
-   
+   text-align: center;
   }
   .dropdown-content {
     width: 15%;
@@ -160,12 +162,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-   font-family: 'Open Sans',sans-serif;
-      font-weight: 200px;
-      font-size: 1.8rem;
-      color: #403f3d;
-      text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 200px;
+  font-size: 1.8rem;
+  color: #403f3d;
+  text-align: center;
+
+  
 }
+
 
 
 ////TABS
@@ -173,27 +178,32 @@ img {
 .tabs {
     
     margin-top: 60px;
-    width: 300px;
+    
     text-align: center;
     width: 100%;
+    
+
     
     .tabs-items {
     margin: 1rem;
       height: 200px;
       display: flex;
       justify-content: center;
-      padding-top: 60px;
+      padding-top: 20px;
       font-family: 'Open Sans',sans-serif;
       font-weight: 200px;
       font-size: 1.8rem;
       color: #403f3d;
       text-align: center;
+      
     }
     .tabs-item {
     margin-left: 50px;
       display: none; 
       width: auto;
       text-align: center;
+      line-height: 20px;
+      
       .tabs-item-title {
         font-family: 'Open Sans',sans-serif;
         font-size: 2.4rem;
@@ -209,15 +219,17 @@ img {
       display: flex;
       background-color:  #fef7ed;
       justify-content: center;
+      
     }
   
     .tabs-link {
-      padding: 20px 10px;
+      padding: 10px 10px;
       font-size: 2.4rem;
       background-color: #3A54B4;
       border-right: 1px solid white;
       color: #fef7ed;
       border-radius: 5px;
+      margin: 15px;
       cursor: pointer;
       &:hover {
         background-color: #FED955;
@@ -236,12 +248,23 @@ img {
     a{
       text-decoration: none;
     }
+    a:link, a:visited {
+      color: #66605e;
+    }
+    a:hover {
+      color: #FF8B7B;
+    }
+    
 ////TABS END 
- }
+ 
 
 ///DESKTOP
 @media (min-width: 1000px) {
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
 section{
   display: flex;
@@ -251,9 +274,10 @@ section{
 }
 
 .navigation {
-  margin-top: 15px;
+  margin-top: 1px;
   display: flex;
   justify-content: flex-end;
+  font-size: 2rem;
 }
 
 a {
@@ -299,7 +323,7 @@ h1{
 h2 {
 padding-top: 3rem;
 text-align: center;
-font-size: 8rem;
+font-size: 7rem;
 
 }
 
@@ -313,7 +337,6 @@ font-size: 8rem;
   text-align: center;
   
 }
-  
 
 /////TABS
 .section {
@@ -329,14 +352,15 @@ font-size: 8rem;
     height: 300px;
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 30px;
     margin: 10px;
     margin-bottom: -100px;
+    line-height: 25px;
     
   }
   .tabs-item {
     display: none; 
-    width: 50%;
+  width: 50%;
     .tabs-item-title {
       font-size: 2.4rem;
       font-weight: bold;
@@ -370,6 +394,24 @@ font-size: 8rem;
     &:hover {
       background-color: #FED955;
     }
+  }
+}
+
+//OUR TEAM ANIMATION
+h2 {
+
+  animation: 
+    nudge 5s linear infinite alternate;
+  
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(200px, 0);
+  }
+  
+  100% {
+    transform: translate(-200px, 0);
   }
 }
 

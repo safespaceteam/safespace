@@ -58,13 +58,15 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     text-align: center;
  }
 
-//MOBILE FIRST
-@media (min-width: 500px) {
 
+.container {
+    max-width: 500px;
+}
+//heading
 .signUp {
     display: none;
 }
@@ -98,6 +100,8 @@ h3 {
 
 }
 
+
+//image
 img.happy {
     border-radius: 60%;
     padding: 10px;
@@ -114,6 +118,7 @@ img.happy {
     
     }
 
+//button styling
 button {
     width: 380px;
     color: white;
@@ -134,17 +139,17 @@ button {
       padding-top: 160px;
   }
 
-
+//dropdown menu
   .dropdown {
     cursor: pointer;
     .dropdown-button {
     width: 50px;
     height: 50px;
-      padding: 20px;
+      
       border: 3px solid#FED955;
       background-color: #FED955;
       color: #fef7ed;
-      font-size: 1.0rem;
+      font-size: 5rem;
       font-weight: bold;
       margin-right: -25px;
     }
@@ -178,18 +183,21 @@ button {
       display: none;
   }
   
-}
+
 
 //desktop
 @media (min-width: 1000px) {
-
+//heading
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
     *{
         margin: 10px;
     }
     .navigation {
     display: flex;
-    justify-content: space-between;
-    margin-left: 250px;
+    justify-content: flex-end;
     font-size: 0.5rem;
         
 .yes {
@@ -210,25 +218,30 @@ h1 {
 h2 {
     padding-top: 3rem;
     text-align: left;
-    margin-left: 20rem;
     font-size: 12rem;
+    width: 400px;
 }
 h3 {
-    margin-left: 17rem;
     font-size: 2.8rem;
     margin-bottom: 20px;
     margin-top: 25px;
 }
+
+//center styling
+.mid {
+    display: flex;
+    flex-direction: column;
+}
+
 .midSec {
     display: flex;
     margin-top: 180px;
-    margin-left: 250px;
+    justify-content: center;
     text-align: center
 }
     
 img.happy {
     width: 500px;
-    margin-right: 250px;
     margin-top: 30px;
     -webkit-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.45);
     -moz-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.45);
@@ -245,7 +258,6 @@ button {
 
 .navigation {
     margin-top: -60px;
-    margin-right: -100px;
 }
 
 .signUp2 {
@@ -260,9 +272,10 @@ nav a{
     padding: 20px;
     font-size: 2.0rem;
     text-decoration: none;
+    
 
 }
-
+//links styling
 a {
     text-decoration: none;
 }
