@@ -133,168 +133,167 @@ body {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 500px) {
-  .container {
-    max-width: 500px;
-  }
-  section {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    margin-right: 20px;
-  }
-  h1 {
-    text-align: left;
-    color: #FFB5AB;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-  }
-  h2 {
-    text-align: center;
-    color: #FF8B7B;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 5rem;
-    font-weight: 900;
-  }
-  .navigation {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-  footer {
-    padding-top: 160px;
-    text-align: center;
-  }
-  .dropdown {
-    cursor: pointer;
-  }
-  .dropdown .dropdown-button {
-    width: 50px;
-    height: 50px;
-    border: 3px solid #fef7ed;
-    background-color: #FED955;
-    color: #fef7ed;
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  .dropdown .dropdown-content {
-    width: 15%;
-    position: absolute;
-    background-color: #fef7ed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border: 2.5px solid #3A54B4;
-  }
-  .dropdown .dropdown-link {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: #3A54B4;
-  }
-  .dropdown .dropdown-link:hover {
-    color: #3A54B4;
-    background-color: #FFB5AB;
-  }
-  .dropdown .dropdown-hidden {
-    display: none;
-  }
-  img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 15px;
-  }
-  .team {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 200px;
-    font-size: 1.8rem;
-    color: #403f3d;
-    text-align: center;
-  }
-  .tabs {
-    margin-top: 60px;
-    text-align: center;
-    width: 100%;
-  }
-  .tabs .tabs-items {
-    margin: 1rem;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 200px;
-    font-size: 1.8rem;
-    color: #403f3d;
-    text-align: center;
-  }
-  .tabs .tabs-item {
-    margin-left: 50px;
-    display: none;
-    width: auto;
-    text-align: center;
-    line-height: 20px;
-  }
-  .tabs .tabs-item .tabs-item-title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.4rem;
-    font-weight: 800px;
-    text-align: center;
-  }
-  .tabs .tabs-item-selected {
-    display: block;
-  }
-  .tabs .tabs-links {
-    display: flex;
-    background-color: #fef7ed;
-    justify-content: center;
-  }
-  .tabs .tabs-link {
-    padding: 10px 10px;
-    font-size: 2.4rem;
-    background-color: #3A54B4;
-    border-right: 1px solid white;
-    color: #fef7ed;
-    border-radius: 5px;
-    margin: 15px;
-    cursor: pointer;
-  }
-  .tabs .tabs-link:hover {
-    background-color: #FED955;
-  }
-  .tabs .tabs-link-selected {
-    z-index: 2;
-    border-right: 1px solid #fef7ed;
-    background-color: #fef7ed;
-    color: #403f3d;
-  }
-  .tabs .tabs-link-selected:hover {
-    background-color: #fef7ed;
-  }
-  a {
-    text-decoration: none;
-  }
-  a:link,
-  a:visited {
-    color: #66605e;
-  }
-  a:hover {
-    color: #FF8B7B;
-  }
+.container {
+  max-width: 500px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-right: 20px;
+}
+h1 {
+  text-align: left;
+  color: #FFB5AB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  text-align: center;
+  color: #FF8B7B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.navigation {
+  display: none;
+}
+button {
+  display: none;
+}
+footer {
+  padding-top: 160px;
+  text-align: center;
+}
+.dropdown {
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fef7ed;
+  background-color: #FED955;
+  color: #fef7ed;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown .dropdown-content {
+  width: 15%;
+  position: absolute;
+  background-color: #fef7ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid #3A54B4;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #3A54B4;
+}
+.dropdown .dropdown-link:hover {
+  color: #3A54B4;
+  background-color: #FFB5AB;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.team {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200px;
+  font-size: 1.8rem;
+  color: #403f3d;
+  text-align: center;
+}
+.tabs {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+.tabs .tabs-items {
+  margin: 1rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200px;
+  font-size: 1.8rem;
+  color: #403f3d;
+  text-align: center;
+}
+.tabs .tabs-item {
+  margin-left: 50px;
+  display: none;
+  width: auto;
+  text-align: center;
+  line-height: 20px;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800px;
+  text-align: center;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #fef7ed;
+  justify-content: center;
+}
+.tabs .tabs-link {
+  padding: 10px 10px;
+  font-size: 2.4rem;
+  background-color: #3A54B4;
+  border-right: 1px solid white;
+  color: #fef7ed;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #FED955;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #fef7ed;
+  background-color: #fef7ed;
+  color: #403f3d;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #fef7ed;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #66605e;
+}
+a:hover {
+  color: #FF8B7B;
 }
 @media (min-width: 1000px) {
   .container {
+    margin: 0 auto;
     max-width: 1200px;
   }
   section {
@@ -304,9 +303,10 @@ body {
     padding: 10px;
   }
   .navigation {
-    margin-top: 15px;
+    margin-top: 1px;
     display: flex;
     justify-content: flex-end;
+    font-size: 2rem;
   }
   a {
     text-decoration: none;

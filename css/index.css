@@ -133,110 +133,109 @@ body {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 500px) {
-  .container {
-    max-width: 500px;
-  }
-  .signUp {
-    display: none;
-  }
-  section {
-    display: flex;
-    justify-content: space-between;
-  }
-  h1 {
-    text-align: left;
-    color: #FFB5AB;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-  }
-  h2 {
-    margin-top: 8rem;
-    color: #FF8B7B;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10rem;
-    font-weight: 900;
-  }
-  h3 {
-    margin-top: 20px;
-    color: #3A54B4;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.6rem;
-    font-weight: 200;
-  }
-  img.happy {
-    border-radius: 60%;
-    padding: 10px;
-    width: 400px;
-    -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
-    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
-    margin: 20px;
-  }
-  .navigation {
-    display: none;
-  }
-  button {
-    width: 380px;
-    color: white;
-    background-color: #3A54B4;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 2rem;
-    margin: 10px 4px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 200;
-    cursor: pointer;
-  }
-  footer {
-    padding-top: 160px;
-  }
-  .dropdown {
-    cursor: pointer;
-  }
-  .dropdown .dropdown-button {
-    width: 50px;
-    height: 50px;
-    border: 3px solid #FED955;
-    background-color: #FED955;
-    color: #fef7ed;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-right: -25px;
-  }
-  .dropdown .dropdown-content {
-    width: 15%;
-    position: absolute;
-    background-color: #fef7ed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border: 2px solid #3A54B4;
-  }
-  .dropdown .dropdown-link {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: #3A54B4;
-  }
-  .dropdown .dropdown-link:hover {
-    color: #3A54B4;
-    background-color: #FFB5AB;
-  }
-  .dropdown .dropdown-hidden {
-    display: none;
-  }
-  .moveButton {
-    display: none;
-  }
+.container {
+  max-width: 500px;
+}
+.signUp {
+  display: none;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-align: left;
+  color: #FFB5AB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  margin-top: 8rem;
+  color: #FF8B7B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+}
+h3 {
+  margin-top: 20px;
+  color: #3A54B4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+img.happy {
+  border-radius: 60%;
+  padding: 10px;
+  width: 400px;
+  -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
+  margin: 20px;
+}
+.navigation {
+  display: none;
+}
+button {
+  width: 380px;
+  color: white;
+  background-color: #3A54B4;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+footer {
+  padding-top: 160px;
+}
+.dropdown {
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #FED955;
+  background-color: #FED955;
+  color: #fef7ed;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-right: -25px;
+}
+.dropdown .dropdown-content {
+  width: 15%;
+  position: absolute;
+  background-color: #fef7ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2px solid #3A54B4;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #3A54B4;
+}
+.dropdown .dropdown-link:hover {
+  color: #3A54B4;
+  background-color: #FFB5AB;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
+.moveButton {
+  display: none;
 }
 @media (min-width: 1000px) {
   .container {
+    margin: 0 auto;
     max-width: 1200px;
   }
   * {
@@ -264,6 +263,7 @@ body {
     padding-top: 3rem;
     text-align: left;
     font-size: 12rem;
+    width: 400px;
   }
   h3 {
     font-size: 2.8rem;
@@ -277,13 +277,11 @@ body {
   .midSec {
     display: flex;
     margin-top: 180px;
-    margin-left: 250px;
     justify-content: center;
     text-align: center;
   }
   img.happy {
     width: 500px;
-    margin-right: 250px;
     margin-top: 30px;
     -webkit-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.45);
